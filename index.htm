@@ -4,16 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
     <link rel="stylesheet" href="estilos.css">
     <title>Tauros</title>
 </head>
 <body>
     <header class="header">
-        <img src="" alt="" class="header--img">
-        <nav class="header--nav">
-            
-        </nav>
+        <div class="header--contenedor">
+            <img src="tauros-logo.svg" alt="" class="header--img">
+            <nav class="header--nav">
+                <div class="header--menu">
+                    <a href="" class="header--wallets oculto">Wallets</a>
+                    <a href="" class="header--tarjeta oculto">Tarjeta</a>
+                    <div class="header--exchange--contenedor">
+                        <a href="" class="header--exchange oculto">Exchange</a>
+                        <svg class="header--icon" viewBox="0 0 24 24" height="20" width="20">
+                            <polyline class="svg--path" points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline class="svg--path" points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                        <div class="header--exchange--info">
+                            <div class="header--exchange--info--title">
+                                <span class="header--exchange--info--market">Mercados</span>
+                                <span class="header--exchange--info--price">Último precio</span>
+                            </div>
+                            <div class="header--exchange--info--info">
+                                <p class="header--exchange--info--left left--right"> <img src="simbolo-bitcoin.png" alt="" class="header--exchange--info--img"> BTC/<sup>MXN</sup></p>
+                                <p class="header--exchange--info--right left--right">$938,990.00 MXN <span class="subida">10.29%</span><svg class="svg--subida" viewBox="0 0 512 512" height="10" width="10"><path fill="var(--subida-verde)" d="M128 320l128-128 128 128z"></path></svg></p>
+                            </div>
+                            <div class="header--exchange--info--info">
+                                <p class="header--exchange--info--left left--right"> <img src="ethereum-simbolo.png" alt="" class="header--exchange--info--img"> ETH/<sup>MXN</sup></p>
+                                <p class="header--exchange--info--right left--right">$59,000.00 MXN <span class="bajada">-8.81%</span><svg class="svg--bajada" viewBox="0 0 512 512" height="10" width="10"><path fill="var(--bajada-rojo)" d="M128 192l128 128 128-128z"></path></svg></p>
+                            </div>
+                            <div class="header--exchange--info--info">
+                                <p class="header--exchange--info--left left--right"> <img src="litecoin-simbolo.png" alt="" class="header--exchange--info--img"> LTC/<sup>MXN</sup></p>
+                                <p class="header--exchange--info--right left--right">$4,389.99 MXN <span class="subida">1.12%</span><svg class="svg--subida" viewBox="0 0 512 512" height="10" width="10"><path fill="var(--subida-verde)" d="M128 320l128-128 128 128z"></path></svg></p>
+                            </div>
+                            <div class="header--exchange--info--info">
+                                <p class="header--exchange--info--left left--right"> <img src="bitcoincash-simbolo.png" alt="" class="header--exchange--info--img"> BCH/<sup>MXN</sup></p>
+                                <p class="header--exchange--info--right left--right">$18,877.47 MXN <span class="bajada">-5.78%</span><svg class="svg--subida" viewBox="0 0 512 512" height="10" width="10"><path fill="var(--bajada-rojo)" d="M128 192l128 128 128-128z"></path></svg></p>
+                            </div>
+                            <div class="header--exchange--info--info">
+                                <p class="header--exchange--info--left left--right"> <img src="stellar-simbolo.png" alt="" class="header--exchange--info--img"> XML/<sup>MXN</sup></p>
+                                <p class="header--exchange--info--right left--right">$10.65 MXN <span class="subida">9.77%</span><svg class="svg--subida" viewBox="0 0 512 512" height="10" width="10"><path fill="var(--subida-verde)" d="M128 320l128-128 128 128z"></path></svg></p>
+                            </div>
+                            <div class="header--exchange--info--info">
+                                <p class="header--exchange--info--left left--right"> <img src="dash-simbolo.png" alt="" class="header--exchange--info--img"> DASH/<sup>MXN</sup></p>
+                                <p class="header--exchange--info--right left--right">$4,300.01 MXN <span class="subida">1.48%</span><svg class="svg--subida" viewBox="0 0 512 512" height="10" width="10"><path fill="var(--subida-verde)" d="M128 320l128-128 128 128z"></path></svg></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header--notificaciones">
+                        <svg class="header--icon" viewBox="0 0 1792 1792" width="20" height="20">
+                            <path class="svg--path" d="M912 1696q0-16-16-16-59 0-101.5-42.5t-42.5-101.5q0-16-16-16t-16 16q0 73 51.5 124.5t124.5 51.5q16 0 16-16zm816-288q0 52-38 90t-90 38h-448q0 106-75 181t-181 75-181-75-75-181h-448q-52 0-90-38t-38-90q50-42 91-88t85-119.5 74.5-158.5 50-206 19.5-260q0-152 117-282.5t307-158.5q-8-19-8-39 0-40 28-68t68-28 68 28 28 68q0 20-8 39 190 28 307 158.5t117 282.5q0 139 19.5 260t50 206 74.5 158.5 85 119.5 91 88z"></path>
+                        </svg>
+                        <div class="header--message">
+                            No tienes notificaciones
+                        </div>
+                    </div>
+                    <div class="header--menu--boton">
+                        <div class="header--menu--boton--opciones">
+                            <a href="" class="header--menu--opciones">Wallets</a>
+                            <a href="" class="header--menu--opciones">Tarjeta</a>
+                            <a href="" class="header--menu--opciones">Exchange</a>
+                            <a href="" class="header--menu--opciones">Cerrar Sesión</a>
+                        </div>
+                        <svg class="header--icon hamburgesa" viewBox="0 0 24 24" height="20" width="20">
+                            <!-- <line stroke="red" x1="0" y1="0" x2="24" y2="24"/> -->
+                            <line x1="3" y1="12" x2="21" y2="12"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <line x1="3" y1="18" x2="21" y2="18"/>
+                        </svg>
+                        <svg class="header--icon tache" viewBox="0 0 24 24" height="20" width="20">
+                            <line x1="18" y1="6" x2="6" y2="18"/>
+                            <line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                    </div>
+                    <a href="" class="header--foto-perfil oculto">AR</a>
+                    <a href="" class="header--perfil oculto">Perfil</a>
+                </div>
+            </nav>
+        </div>
     </header>
 </body>
 </html>

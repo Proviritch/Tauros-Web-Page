@@ -1,3 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'DINPro';
+    src: url('DINPro.otf') format('opentype')
+}
+
 :root {
     --negro: #070707;
     --gris-icono: #808080;
@@ -6,4 +17,205 @@
     --ver-completo: #8696a8;
     --bordes: #d6dfe9;
     --fuente-historial: #141f30;
+    --subida-verde: rgb(73, 204, 104);
+    --bajada-rojo: rgb(252, 77, 77);
+    --color-mxn: rgb(174, 174, 174);
 }
+
+html {
+    font-family: 'DINPro';
+    font-size: 62.5%;
+}
+
+.header {
+    width: 100%;
+    padding: 0.7em;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.06);
+}
+
+.header--contenedor {
+    width: min(100%, 1300px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header--img {
+    height: 3.5rem;
+}
+
+.oculto {
+    display: none;
+}
+
+/* .header--menu--desplazable {
+    margin-left: 2em;
+} */
+
+/* .header--icon:nth-of-type(2) {
+    margin-left: 1em;
+} */
+
+line {
+    stroke: grey;
+    stroke-width: 2;
+}
+
+.svg--path {
+    fill: grey;
+}
+
+.header--menu--boton {
+    display: inline-block;
+    margin-left: 2em;
+}
+
+.header--menu--boton--opciones, .header--exchange--info  {
+    width: 100%;
+    background: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0%;
+    transform: translateY(-100%);
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.06);
+}
+
+.header--menu--opciones {
+    font-size: 1.5rem;
+    padding: 0.8em 0;
+    text-decoration: none;
+    color: var(--negro);
+} 
+
+.header--menu--opciones:hover {
+    color: var(--color-mxn);
+}
+
+.header--menu--opciones:nth-of-type(1) {
+    font-weight: bold;
+}
+
+.header--menu--boton:hover .header--menu--boton--opciones, .header--exchange--contenedor:hover .header--exchange--info {
+    transform: translateY(calc(-3% + 4.3rem));
+}
+
+.tache {
+    position: absolute;
+    display: none;
+}
+
+.header--menu--boton:hover .tache {
+    position: static;
+    display: inline-block;
+    margin-left: 0;
+}
+
+.header--menu--boton:hover .hamburgesa {
+    position: absolute;
+    display: none;
+}
+
+.header--exchange--info {
+    width: 90%;
+    /* background-color: orangered; */
+    transform: translateY(-100%);
+    left: 5%;
+    border: 1px solid var(--bordes);
+    border-radius: 0.5rem;
+    margin: 0 auto;
+}
+
+.header--exchange--info--info {
+    border-bottom: 1px solid var(--bordes);
+}
+.header--exchange--info--info:hover {
+    background: var(--blanco-casilla);
+    cursor: pointer;
+}
+
+
+/* .header--exchange--info--info:nth-of-type(2) {
+    background-color: red;
+} */
+
+.header--exchange--info--title, .header--exchange--info--info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: min(2vw + 0.56rem, 1.6rem);
+    padding: 1em;
+}
+
+.header--exchange--info--title {
+    padding: 1em 2em 1em 2em;
+}
+
+.header--exchange--info--left {
+    margin-left: 1.25em;
+}
+
+.header--exchange--info--left:hover {
+    color: var(--color-mxn);
+}
+
+.header--exchange--info--right {
+    margin-right: 1.25em;
+}
+
+.header--exchange--contenedor {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+sup {
+    font-size: min(2vw + 0.26rem, 1.3rem);
+    color: var(--color-mxn);
+}
+
+.subida {
+    font-size: min(2vw + 0.36rem, 1.4rem);
+    color: var(--subida-verde);
+}
+
+.bajada {
+    font-size: min(2vw + 0.36rem, 1.4rem);
+    color: var(--bajada-rojo);
+}
+
+/* .header--exchange--info--info {
+} */
+
+.left--right {
+    display: inline-block;
+}
+
+.header--exchange--info--img {
+    width: 2rem;
+    vertical-align: middle;
+}
+
+.header--notificaciones {
+    display: inline-block;
+}
+
+.header--message {
+    position: absolute;
+    transform: translateX(-70%) translateY(-200%);
+    font-size: 1.6rem;
+    padding: 1.16em 0.6rem;
+    box-shadow: 0 1px 3px 0 rgba(63,63,68,.15);
+    white-space: nowrap;
+    background: white;
+    color: var(--gris-icono);
+}
+
+.header--notificaciones:hover .header--message {
+    transform: translateX(-70%) translateY(5%);
+}
+
+
+
+
