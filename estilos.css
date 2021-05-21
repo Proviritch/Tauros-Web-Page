@@ -216,6 +216,80 @@ sup {
     transform: translateX(-70%) translateY(5%);
 }
 
+.main {
+    padding: 1rem;
+}
 
+.main--cantidad--total {
+    width: 100%;
+    background: var(--negro);
+    color: white;
+    border-radius: 2rem;
+    padding: 1.6rem 0;
+}
+
+.main--cantidad--total p {
+    text-align: center;
+}
+
+.total--dinero {
+    font-size: 2.6rem;
+}
+
+.total--mxn {
+    font-size: 1.2rem;
+    color: var(--gris-fuente);
+}
+
+.main--disponible {
+    background: var(--blanco-casilla);
+    border: 1px solid var(--bordes);
+    border-radius: 1rem;
+    margin-top: 1.5em;
+}
+
+.disponible--img {
+    width: 3.8rem;
+    height: 3.4rem;
+    margin-right: 1em;
+}
+
+.disponible--text {
+    font-size: 1.4rem;
+}
+
+.disponible--izquierda {
+    display: flex;
+    width: 13em;
+}
+
+.disponible--left-right-top, .disponible--left-right-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.disponible--derecha {
+    font-size: 2rem;
+}
+
+.disponible--left-right-bottom p {
+    width: 47%;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.5em 1.5em;
+    border-radius: 2rem;
+    border: 1px solid var(--bordes);
+    background: white;
+}
+
+.disponible--left-right-bottom {
+    margin-top: 3em;
+}
+
+.main--disponible {
+    padding: 2em;
+}
 
 
