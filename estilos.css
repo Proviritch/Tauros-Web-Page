@@ -292,4 +292,93 @@ sup {
     padding: 2em;
 }
 
+/*empieza la sección donde se ve cuántas monedas se tienen*/
+
+
+.main--cripto {
+    width: 100%;
+    border: 1px solid var(--bordes);
+    border-radius: 1rem;
+    margin-top: 1.5em;
+}
+
+.main--cripto--moneda--padre {
+    width: 100%;
+    height: 9rem;
+    border-bottom: 1px solid var(--bordes);
+}
+
+.main--cripto--moneda--padre:last-child {
+    border-bottom: none;
+}
+
+.main--cripto--moneda--padre:last-child .main--cripto--button {
+    border-radius: 0 0 1rem 1rem;
+}
+
+.main--cripto--moneda--padre:hover .main--cripto--moneda {
+    background: var(--blanco-casilla);
+    cursor: pointer;
+    height: calc(100% - 30%);
+}
+
+.main--cripto--moneda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 2.88rem;
+}
+
+.moneda--left--img {
+    width: 3.8em;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 2em;
+}
+
+.moneda--left--name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.moneda--right--cantidad {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.moneda--right--valor {
+    font-size: 1.5rem;
+    color: var(--gris-fuente);
+}
+
+.main--cripto--button--padre {
+    display: none;
+}
+
+.main--cripto--moneda--padre:hover .main--cripto--button--padre {
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--bordes);
+}
+
+.main--cripto--button {
+    width: 50%;
+    /* background: rgba(255, 0, 0, 0.287); */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.main--cripto--button:hover {
+    background: var(--blanco-casilla);
+    cursor: pointer;
+}
+
+
 
