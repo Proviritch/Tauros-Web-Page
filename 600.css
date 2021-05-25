@@ -1,0 +1,36 @@
+.main--buy-sell--historial {
+    display: flex;
+    gap: 1rem;
+}
+
+.campanita {
+    fill: black;
+}
+
+.flecha, .hamburgesa {
+    display: none;
+}
+
+.oculto--header {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 0 0.8em;
+}
+
+.oculto--header:hover {
+    color: #b6b8b8;
+}
+
+.header--notificaciones {
+    vertical-align: middle;
+}
+
+.header--foto-perfil {
+    color: white;
+    background: #808080;
+    border-radius: 100%;
+    padding: 0.5em;
+}
+

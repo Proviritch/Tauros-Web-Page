@@ -45,7 +45,7 @@ html {
     height: 3.5rem;
 }
 
-.oculto {
+.oculto--header {
     display: none;
 }
 
@@ -63,6 +63,12 @@ line {
 }
 
 .svg--path {
+    stroke: grey;
+    fill: none;
+    stroke-width: 2;
+}
+
+.campanita {
     fill: grey;
 }
 
