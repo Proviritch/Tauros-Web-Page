@@ -296,7 +296,7 @@ sup {
 /*empieza la sección donde se ve cuántas monedas se tienen*/
 
 
-.main--cripto, .main--buy-sell--historial {
+.main--cripto, .main--buy-sell, .main--historial {
     width: 100%;
     border: 1px solid var(--bordes);
     border-radius: 1rem;
@@ -421,10 +421,12 @@ sup {
     border-radius: 1em;
     background: var(--blanco-casilla);
     color: var(--gris-fuente);
+    font-weight: bold;
 }
 
 .main--buy--sell--pesos {
     font-size: 3.2rem;
+    font-weight: bold;
 }
 
 .buy--sell--mxn {
@@ -434,6 +436,7 @@ sup {
 .main--buy--sell--cripto {
     font-size: 1.2rem;
     color: var(--gris-fuente);
+    font-weight: bold;
 }
 
 .main--buy--sell--cambio {
@@ -539,11 +542,52 @@ sup {
     margin-top: 1.6rem;
 }
 
+/*empieza el historial*/
 
+.main--historial--titulo {
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: space-between;
+    font-weight: bold;
+}
 
-/* .main--buy--sell--cambio--numero {
-    pointer-events: none;
-} */
+.main--historial--titulo p {
+    margin: 0.625em 1em;
+}
+
+.historial--completo {
+    color: var(--gris-fuente);
+}
+
+.historial--info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.57142em 1.142857em;
+    border-top: 1px solid var(--bordes);
+}
+
+.historial--info--left {
+    display: flex;
+    align-items: center;
+}
+
+.historial--text--down {
+    font-size: 1.2rem;
+    color: var(--gris-fuente);
+}
+
+.historial--info--left--img {
+    width: 1.7857em;
+    height: 1.7857em;
+    margin-right: 0.5em;
+}
+
+.main--historial--info {
+    max-height: 21.8571428em;
+    font-size: 1.4rem;
+    font-weight: bold;
+    overflow: auto;
+}
 
 
 
