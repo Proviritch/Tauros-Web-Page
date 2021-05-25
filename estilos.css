@@ -20,6 +20,7 @@
     --subida-verde: rgb(73, 204, 104);
     --bajada-rojo: rgb(252, 77, 77);
     --color-mxn: rgb(174, 174, 174);
+    --gris-hover: #ebebeb;
 }
 
 html {
@@ -295,7 +296,7 @@ sup {
 /*empieza la sección donde se ve cuántas monedas se tienen*/
 
 
-.main--cripto {
+.main--cripto, .main--buy-sell--historial {
     width: 100%;
     border: 1px solid var(--bordes);
     border-radius: 1rem;
@@ -379,6 +380,170 @@ sup {
     background: var(--blanco-casilla);
     cursor: pointer;
 }
+
+/*Empieza el recuadro de vender y comprar cripto*/
+
+.main--buy--sell--info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .main--buy-sell {
+    width: 100%;
+    border: 1px solid var(--bordes);
+} */
+
+.main--buy--sell--span {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 0.75em 0;
+    border-bottom: 1px solid var(--bordes);
+}
+
+.main--buy--sell--span:last-child {
+    border-left: 1px solid var(--bordes);
+}
+
+.main--buy--sell--span:hover {
+    background: var(--blanco-casilla);
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.main--buy--sell--disponible {
+    display: inline-block;
+    font-size: 1.4rem;
+    padding: 0.4em 1em;
+    border-radius: 1em;
+    background: var(--blanco-casilla);
+    color: var(--gris-fuente);
+}
+
+.main--buy--sell--pesos {
+    font-size: 3.2rem;
+}
+
+.buy--sell--mxn {
+    font-size: 1.4rem;
+}
+
+.main--buy--sell--cripto {
+    font-size: 1.2rem;
+    color: var(--gris-fuente);
+}
+
+.main--buy--sell--cambio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main--buy--sell--svg {
+    transform: rotate(90deg); 
+    margin-left: 1em;
+}
+
+.main--buy--sell--pesos, .main--buy--sell--cripto {
+    text-align: center;
+}
+
+.main--buy--sell--max {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.buy--sell--label {
+    font-size: 1.2rem;
+    align-self: start;
+}
+
+.select--moneda {
+    display: inline-block;
+}
+
+.buy--sell--select {
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.4rem;
+    border: 2px solid black;
+    position: relative;
+    width: 100%;
+}
+
+.select--moneda {
+    font-size: 1.6rem;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.select--img {
+    width: 2.5rem;
+    height: auto;
+    vertical-align: middle;
+}
+
+.select--span {
+    font-weight: normal;
+}
+
+.select--oculto {
+    position: absolute;
+    width: 100%;
+    border: 1px solid var(--bordes);
+    background: white;
+    border-radius: 0.5rem;
+    left: 0;
+    top: 0; 
+    padding: 0.8rem 0;
+    transform: scale(0);
+    transition: 0.2s linear;
+}
+
+.buy--sell--select:hover .select--oculto {
+    transform: scale(1);
+}
+
+.oculto {
+    border: none;
+    padding: 0.8rem 1.6rem;
+    border-radius: none;
+}
+
+.oculto:hover {
+    background: var(--gris-hover);
+}
+
+.buy--sell--button {
+    font-size: 1.6rem;
+    text-align: center;
+    background: #000;
+    color: white;
+    font-weight: bold;
+    padding: 0.375em 0;
+    border-radius: 1.5em;
+    width: 100%;
+}
+
+.buy--sell--select:hover, .buy--sell--button:hover {
+    cursor: pointer;
+}
+
+.main--buy--sell--cambio--numero, .main--buy--sell--max, .buy--sell--button {
+    margin-top: 1.6rem;
+}
+
+
+
+/* .main--buy--sell--cambio--numero {
+    pointer-events: none;
+} */
 
 
 
