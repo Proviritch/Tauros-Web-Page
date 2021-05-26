@@ -1,0 +1,19 @@
+.grafica {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.main--buy-sell--historial {
+    flex-wrap: wrap;
+}
+
+.main--historial, .main--buy-sell {
+    width: calc(50% - 0.5rem);
+}
+
+.main--buy-sell--historial {
+    flex-grow: 0;
+    width: 706px;
+}
+

@@ -34,3 +34,11 @@
     padding: 0.5em;
 }
 
+.header--exchange--info {
+    width: 38.8rem;
+    left: calc(100% - 43rem);
+}
+
+.header--contenedor {
+    position: relative;
+}
